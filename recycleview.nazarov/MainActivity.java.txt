@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         people=new ArrayList<>();
         List<Person>people=new ArrayList<>();
-        people.add(new Person("ssssssssss",R.drawable.img2));
-        people.add(new Person("qwerty",R.drawable.img3));
-        people.add(new Person("QWERTY",R.drawable.img4));
-        people.add(new Person("QWERddddTY",R.drawable.img5));
+        people.add(new Person("Arbuz",R.drawable.img2));
+        people.add(new Person("Banana",R.drawable.img3));
+        people.add(new Person("Pamelo",R.drawable.img4));
+        people.add(new Person("Apelsin",R.drawable.img1));
         binding.recyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         binding.recyclerView.setLayoutManager(layoutManager);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                people.add(new Person("new",R.drawable.img5));
+                people.add(new Person("new",R.drawable.img1));
                 adapter.notifyDataSetChanged();
             }
         });
